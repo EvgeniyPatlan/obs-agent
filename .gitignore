@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.env
+talk/
+
+# Results: publish only the final, small files.
+results/*
+!results/RESULTS.md
+!results/calibration.json
+!results/obs_noise.json
+!results/charts/
+!results/v3/
+!results/bench_v3all/
+results/bench_v3all/*/*
+!results/bench_v3all/*/summary_*.json

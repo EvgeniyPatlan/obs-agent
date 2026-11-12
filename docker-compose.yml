@@ -1,0 +1,53 @@
+version: "3.8"
+
+# Bench: gateway -> api -> store, a load generator, a trace sink and
+# Prometheus. The "lab" container trains and runs the agent.
+x-py: &py
+  image: obs-agent:dev
+  build: .
+  restart: unless-stopped
+
+services:
+  gateway:
+    <<: *py
+    command: python bench/service.py
+    environment: {SERVICE: gateway, DOWNSTREAM: "http://api:8080", POOL: "64", BASE_MS: "5"}
+  api:
+    <<: *py
+    command: python bench/service.py
+    environment: {SERVICE: api, DOWNSTREAM: "http://store:8080", POOL: "32", BASE_MS: "10"}
+  store:
+    <<: *py
+    command: python bench/service.py
+    environment: {SERVICE: store, POOL: "6", BASE_MS: "15"}
+  tracesink:
+    <<: *py
+    command: python bench/tracesink.py
+  loadgen:
+    <<: *py
+    command: python -m bench.loadgen
+    environment: {TARGET: "http://gateway:8080/work", BASE_RPS: "40"}
+    depends_on: [gateway]
+
+  prom-init:
+    image: obs-agent:dev
+    command: python -c "from obsagent.bench_env import write_prom_config; write_prom_config({s:1 for s in ('gateway','api','store')}); import os; os.chmod('/prom-config', 0o777); os.chmod('/prom-config/prometheus.yml', 0o666)"
+    volumes: ["promcfg:/prom-config"]
+  prometheus:
+    image: prom/prometheus:v3.5.0
+    restart: unless-stopped
+    entrypoint: ["/bin/sh", "-c", "until [ -f /prom-config/prometheus.yml ]; do sleep 1; done; exec /bin/prometheus --config.file=/prom-config/prometheus.yml --web.enable-lifecycle --storage.tsdb.retention.time=2d"]
+    volumes: ["promcfg:/prom-config:ro"]
+    ports: ["127.0.0.1:${PROM_PORT:-9090}:9090"]
+    depends_on: [prom-init]
+
+  lab:
+    image: obs-agent:dev
+    profiles: ["lab"]
+    user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
+    environment: {MPLCONFIGDIR: /tmp/mpl}
+    volumes: ["./results:/work/results", "promcfg:/prom-config"]
+    depends_on: [prometheus, loadgen, tracesink]
+
+volumes:
+  promcfg: {}

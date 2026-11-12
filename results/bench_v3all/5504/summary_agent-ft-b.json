@@ -1,0 +1,23 @@
+{
+  "agent-ft-b": {
+    "samples": 315920.0,
+    "spans": 53288,
+    "incident_ticks": 505,
+    "incident_tick_coverage": 0.9148514851485149,
+    "incidents": 17,
+    "incidents_covered": 17,
+    "incidents_ready_at_start": 5,
+    "mean_detect_s": 15.0,
+    "mean_time_to_diagnostic_s": 11.176470588235293,
+    "changes_per_service_hour": 14.666666666666666,
+    "mean_reward": 0.026452442208364818,
+    "prometheus_samples_total": 315480.0,
+    "spans_total": 53288,
+    "span_bytes_total": 16696747.999998558,
+    "wall_s": 3600.0399436950684,
+    "seed": 5504,
+    "minutes": 60.0,
+    "fault_gap_s": 150.0,
+    "agent": "agent.npz"
+  }
+}

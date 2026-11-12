@@ -1,0 +1,23 @@
+{
+  "agent-v3-lean": {
+    "samples": 249560.0,
+    "spans": 39135,
+    "incident_ticks": 429,
+    "incident_tick_coverage": 0.9184149184149184,
+    "incidents": 13,
+    "incidents_covered": 13,
+    "incidents_ready_at_start": 3,
+    "mean_detect_s": 14.23076923076923,
+    "mean_time_to_diagnostic_s": 9.23076923076923,
+    "changes_per_service_hour": 15.666666666666666,
+    "mean_reward": 0.07600519179894179,
+    "prometheus_samples_total": 249920.0,
+    "spans_total": 39135,
+    "span_bytes_total": 12249685.999999605,
+    "wall_s": 3600.0214636325836,
+    "seed": 5502,
+    "minutes": 60.0,
+    "fault_gap_s": 150.0,
+    "agent": "agent.npz"
+  }
+}

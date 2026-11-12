@@ -1,0 +1,101 @@
+{
+  "agent-ft-a": {
+    "seeds": 4,
+    "volume": 0.0584615238042903,
+    "incidents": 67,
+    "covered": 67,
+    "ready_at_start": 22,
+    "time_to_diagnostic_s": 10.298507462686567,
+    "changes_per_service_hour": 14.0
+  },
+  "agent-ft-b": {
+    "seeds": 4,
+    "volume": 0.05740147708953075,
+    "incidents": 70,
+    "covered": 69,
+    "ready_at_start": 25,
+    "time_to_diagnostic_s": 8.405797101449275,
+    "changes_per_service_hour": 13.25
+  },
+  "agent-v2-lean": {
+    "seeds": 4,
+    "volume": 0.07030227532873493,
+    "incidents": 88,
+    "covered": 83,
+    "ready_at_start": 40,
+    "time_to_diagnostic_s": 9.337349397590362,
+    "changes_per_service_hour": 23.666666666666668
+  },
+  "agent-v3-balanced": {
+    "seeds": 12,
+    "volume": 0.06824094324028175,
+    "incidents": 236,
+    "covered": 233,
+    "ready_at_start": 123,
+    "time_to_diagnostic_s": 6.373390557939914,
+    "changes_per_service_hour": 18.47222222222222
+  },
+  "agent-v3-balanced-explore": {
+    "seeds": 4,
+    "volume": 0.2457537422185943,
+    "incidents": 73,
+    "covered": 73,
+    "ready_at_start": 48,
+    "time_to_diagnostic_s": 4.315068493150685,
+    "changes_per_service_hour": 85.33333333333334
+  },
+  "agent-v3-lean": {
+    "seeds": 12,
+    "volume": 0.05933963845464969,
+    "incidents": 239,
+    "covered": 236,
+    "ready_at_start": 92,
+    "time_to_diagnostic_s": 7.372881355932203,
+    "changes_per_service_hour": 22.63888888888889
+  },
+  "agent-v3-lean-explore": {
+    "seeds": 4,
+    "volume": 0.22249762078593716,
+    "incidents": 80,
+    "covered": 79,
+    "ready_at_start": 48,
+    "time_to_diagnostic_s": 4.2405063291139244,
+    "changes_per_service_hour": 86.66666666666667
+  },
+  "rules": {
+    "seeds": 12,
+    "volume": 0.0638179220695257,
+    "incidents": 225,
+    "covered": 219,
+    "ready_at_start": 65,
+    "time_to_diagnostic_s": 10.799086757990867,
+    "changes_per_service_hour": 9.11111111111111
+  },
+  "rules-burn": {
+    "seeds": 12,
+    "volume": 0.0588579913815236,
+    "incidents": 230,
+    "covered": 216,
+    "ready_at_start": 70,
+    "time_to_diagnostic_s": 20.625,
+    "changes_per_service_hour": 9.277777777777777
+  },
+  "static-full": {
+    "seeds": 12,
+    "volume": 1.0,
+    "incidents": 226,
+    "covered": 226,
+    "ready_at_start": 226,
+    "time_to_diagnostic_s": 0.0,
+    "changes_per_service_hour": 1.0
+  },
+  "static-lean": {
+    "seeds": 4,
+    "volume": 0.0056987901550463365,
+    "incidents": 85,
+    "covered": 0,
+    "ready_at_start": 0,
+    "time_to_diagnostic_s": 0.0,
+    "changes_per_service_hour": 0.0
+  }
+}

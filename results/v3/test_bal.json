@@ -1,0 +1,75 @@
+{
+  "episodes": 40,
+  "minutes": 60,
+  "seeds": "test",
+  "fault_gap_s": 150.0,
+  "noise": true,
+  "benign": true,
+  "results": {
+    "static-full": {
+      "samples": 423360000.0,
+      "spans": 20139186.644494317,
+      "incident_ticks": 508.525,
+      "incident_tick_coverage": 1.0,
+      "incidents": 853.0,
+      "incidents_covered": 853.0,
+      "incidents_ready_at_start": 853.0,
+      "mean_detect_s": 4.839283456791162,
+      "mean_time_to_diagnostic_s": 0.0,
+      "changes_per_service_hour": 1.0,
+      "mean_reward": -0.7965328362157434
+    },
+    "static-lean": {
+      "samples": 575999.9999999999,
+      "spans": 201391.86644494318,
+      "incident_ticks": 510.35,
+      "incident_tick_coverage": 0.0,
+      "incidents": 855.0,
+      "incidents_covered": 0.0,
+      "incidents_ready_at_start": 0.0,
+      "mean_detect_s": 14.644916288090531,
+      "mean_time_to_diagnostic_s": NaN,
+      "changes_per_service_hour": 0.0,
+      "mean_reward": -1.1435778111191492
+    },
+    "rules": {
+      "samples": 14736540.0,
+      "spans": 2491808.7933999915,
+      "incident_ticks": 508.7,
+      "incident_tick_coverage": 0.8740965545787276,
+      "incidents": 840.0,
+      "incidents_covered": 828.0,
+      "incidents_ready_at_start": 368.0,
+      "mean_detect_s": 11.453233408972237,
+      "mean_time_to_diagnostic_s": 9.374674508529166,
+      "changes_per_service_hour": 8.833333333333334,
+      "mean_reward": -0.08905018035584518
+    },
+    "rules-burn": {
+      "samples": 12566013.333333334,
+      "spans": 2158762.5028926004,
+      "incident_ticks": 508.55,
+      "incident_tick_coverage": 0.7688152134791528,
+      "incidents": 836.0,
+      "incidents_covered": 802.0,
+      "incidents_ready_at_start": 278.0,
+      "mean_detect_s": 12.127651888760322,
+      "mean_time_to_diagnostic_s": 20.20737889593105,
+      "changes_per_service_hour": 9.983333333333333,
+      "mean_reward": -0.21543223209486095
+    },
+    "agent-v3-balanced": {
+      "samples": 12869853.333333334,
+      "spans": 2089274.5662966096,
+      "incident_ticks": 508.45,
+      "incident_tick_coverage": 0.9095463001081814,
+      "incidents": 844.0,
+      "incidents_covered": 836.0,
+      "incidents_ready_at_start": 418.0,
+      "mean_detect_s": 9.331962174058908,
+      "mean_time_to_diagnostic_s": 6.037648808510324,
+      "changes_per_service_hour": 14.591666666666669,
+      "mean_reward": -0.016592655123471977
+    }
+  }
+}

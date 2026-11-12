@@ -1,0 +1,88 @@
+{
+  "episodes": 20,
+  "minutes": 60,
+  "seeds": "dev",
+  "fault_gap_s": 150.0,
+  "noise": true,
+  "benign": true,
+  "results": {
+    "static-full": {
+      "samples": 211680000.0,
+      "spans": 9998158.915160151,
+      "incident_ticks": 529.0,
+      "incident_tick_coverage": 1.0,
+      "incidents": 409.0,
+      "incidents_covered": 409.0,
+      "incidents_ready_at_start": 409.0,
+      "mean_detect_s": 5.827464427674521,
+      "mean_time_to_diagnostic_s": 0.0,
+      "changes_per_service_hour": 1.0,
+      "mean_reward": -0.79108589586172
+    },
+    "static-lean": {
+      "samples": 287999.99999999994,
+      "spans": 99981.58915160151,
+      "incident_ticks": 530.55,
+      "incident_tick_coverage": 0.0,
+      "incidents": 412.0,
+      "incidents_covered": 0.0,
+      "incidents_ready_at_start": 0.0,
+      "mean_detect_s": 16.061568214694688,
+      "mean_time_to_diagnostic_s": NaN,
+      "changes_per_service_hour": 0.0,
+      "mean_reward": -1.1906640477341273
+    },
+    "rules": {
+      "samples": 7296366.666666667,
+      "spans": 1215436.7951431223,
+      "incident_ticks": 531.75,
+      "incident_tick_coverage": 0.8674929777859066,
+      "incidents": 408.0,
+      "incidents_covered": 395.0,
+      "incidents_ready_at_start": 163.0,
+      "mean_detect_s": 13.19416692122021,
+      "mean_time_to_diagnostic_s": 10.569931370191359,
+      "changes_per_service_hour": 8.816666666666666,
+      "mean_reward": -0.10086148502502182
+    },
+    "rules-burn": {
+      "samples": 6331413.333333334,
+      "spans": 1070499.714404962,
+      "incident_ticks": 527.8,
+      "incident_tick_coverage": 0.7707060257286177,
+      "incidents": 413.0,
+      "incidents_covered": 399.0,
+      "incidents_ready_at_start": 130.0,
+      "mean_detect_s": 13.465062521000837,
+      "mean_time_to_diagnostic_s": 21.184506642355515,
+      "changes_per_service_hour": 9.983333333333336,
+      "mean_reward": -0.2193490705573416
+    },
+    "agent-v3-balanced": {
+      "samples": 6672733.333333334,
+      "spans": 1064512.602622134,
+      "incident_ticks": 530.6,
+      "incident_tick_coverage": 0.9210554415845001,
+      "incidents": 427.0,
+      "incidents_covered": 423.0,
+      "incidents_ready_at_start": 226.0,
+      "mean_detect_s": 9.908879758122636,
+      "mean_time_to_diagnostic_s": 5.2456464056018595,
+      "changes_per_service_hour": 14.700000000000003,
+      "mean_reward": -0.0037507644381575113
+    },
+    "agent-v3-lean": {
+      "samples": 5824760.0,
+      "spans": 926492.4317950099,
+      "incident_ticks": 531.85,
+      "incident_tick_coverage": 0.8880231400400433,
+      "incidents": 410.0,
+      "incidents_covered": 407.0,
+      "incidents_ready_at_start": 156.0,
+      "mean_detect_s": 11.751508540185991,
+      "mean_time_to_diagnostic_s": 7.902862987327116,
+      "changes_per_service_hour": 16.03333333333333,
+      "mean_reward": -0.049234319736988594
+    }
+  }
+}

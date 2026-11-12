@@ -1,0 +1,23 @@
+{
+  "rules-burn": {
+    "samples": 297160.0,
+    "spans": 46771,
+    "incident_ticks": 480,
+    "incident_tick_coverage": 0.7604166666666666,
+    "incidents": 21,
+    "incidents_covered": 19,
+    "incidents_ready_at_start": 6,
+    "mean_detect_s": 14.047619047619047,
+    "mean_time_to_diagnostic_s": 22.894736842105264,
+    "changes_per_service_hour": 8.666666666666666,
+    "mean_reward": -0.20363590970647522,
+    "prometheus_samples_total": 297160.0,
+    "spans_total": 46771,
+    "span_bytes_total": 14603610.999999914,
+    "wall_s": 3600.081401348114,
+    "seed": 5401,
+    "minutes": 60.0,
+    "fault_gap_s": 150.0,
+    "agent": "agent.npz"
+  }
+}

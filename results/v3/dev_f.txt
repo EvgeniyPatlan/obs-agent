@@ -1,0 +1,7 @@
+static-full            volume=100.00% covered=409/409 ready@start=409 detect=5.8s to-diag=0.0s changes/h=1.0
+/work/obsagent/eval_sim.py:29: RuntimeWarning: Mean of empty slice
+  else float(np.nanmean([r[k] for r in rows])) for k in rows[0]}
+static-lean            volume= 0.57% covered=0/412 ready@start=0 detect=16.1s to-diag=nans changes/h=0.0
+rules                  volume= 7.80% covered=395/408 ready@start=163 detect=13.2s to-diag=10.6s changes/h=8.8
+rules-burn             volume= 6.85% covered=399/413 ready@start=130 detect=13.5s to-diag=21.2s changes/h=10.0
+f                      volume= 5.44% covered=406/416 ready@start=104 detect=12.2s to-diag=10.6s changes/h=22.7

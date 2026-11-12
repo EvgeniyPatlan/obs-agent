@@ -1,0 +1,23 @@
+{
+  "static-full": {
+    "samples": 10582040.0,
+    "spans": 487800,
+    "incident_ticks": 353,
+    "incident_tick_coverage": 1.0,
+    "incidents": 15,
+    "incidents_covered": 15,
+    "incidents_ready_at_start": 15,
+    "mean_detect_s": 6.0,
+    "mean_time_to_diagnostic_s": 0.0,
+    "changes_per_service_hour": 1.0,
+    "mean_reward": -0.8276280864197532,
+    "prometheus_samples_total": 10582040.0,
+    "spans_total": 487800,
+    "span_bytes_total": 151155251.99999124,
+    "wall_s": 3600.041876554489,
+    "seed": 5303,
+    "minutes": 60.0,
+    "fault_gap_s": 150.0,
+    "agent": "agent.npz"
+  }
+}

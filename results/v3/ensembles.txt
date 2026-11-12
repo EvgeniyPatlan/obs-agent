@@ -1,0 +1,2 @@
+BAL=v3/a.npz+a2.npz+b.npz+c.npz+c2.npz+d.npz+e.npz+f.npz+g.npz+g2.npz+h.npz+h2.npz+i.npz+j.npz
+LEAN=v3/f.npz+c2.npz+j.npz+g2.npz+d.npz+e.npz+h2.npz
